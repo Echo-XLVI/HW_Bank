@@ -25,7 +25,7 @@ class UserManager:
         if res:
             if res[0] and res[1]:
                                                                     ## if logged in user already has created account
-                bank_obj=BankAccount(res[1][0], res[1][1], int(res[1][2]))
+                bank_obj=BankAccount(res[1][0], res[1][1], int(res[1][2])) 
                 return User(res[0][0], res[0][1], res[0][2], bank_obj)
             else:
                 return User(res[0][0], res[0][1], res[0][2])

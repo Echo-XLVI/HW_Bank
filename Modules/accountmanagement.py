@@ -5,7 +5,7 @@ class AccountManager:
     def __init__(self) -> None:
         pass
 
-    def create_account(self, user_obj:object, balance:int, ):
+    def create_account(self, user_obj:object, balance:int):
         while True:
             if not dbm.check_userid_account(user_obj.user_id):
                 account_id=''.join(str(uuid.uuid4()).split('-'))[:30]
@@ -25,4 +25,4 @@ class AccountManager:
         if balance>amount:
             dbm.withdraw(user_obj.acc_obj.acc_id, amount)
         else:
-            print('insufficient funds')
+            print('Insufficient Funds')

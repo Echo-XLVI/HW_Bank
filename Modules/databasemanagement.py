@@ -1,4 +1,4 @@
-from dbcontextmanger import ContextManager
+from dbcontextmanager import ContextManager
 
 class DataBaseManager:
 
