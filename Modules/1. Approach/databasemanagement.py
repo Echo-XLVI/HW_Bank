@@ -107,6 +107,9 @@ class DataBaseManager:
             db.cursor.execute(query)
             db.cursor.execute(query2)
 
+    # TODO:write a transfer method
+    def transfer(cls, amount:int, to_account_id:int):
+        pass
 ##################################################
 # DataBaseManager.check_username('reza')
 # DataBaseManager.login_query('reza','1380ACreza')

@@ -1,5 +1,5 @@
 from databasemanagement import DataBaseManager as dbm
-from user import User
+from user_module import User
 from bankaccount_module import BankAccount
 
 import uuid
